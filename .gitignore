@@ -14,3 +14,5 @@ Archieve/
 *.cb
 *.cb2
 .*.lb
+*.fdb_latexmk
+*.DS_Store

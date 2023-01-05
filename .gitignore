@@ -16,4 +16,4 @@ Archieve/
 .*.lb
 *.fdb_latexmk
 /.DS_Store
-*.*.gz
+*.synctex.gz

@@ -15,4 +15,4 @@ Archieve/
 *.cb2
 .*.lb
 *.fdb_latexmk
-*.DS_Store
+.DS_Store

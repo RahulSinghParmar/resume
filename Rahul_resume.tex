@@ -88,17 +88,40 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
+%-------------------------------------------
+% Custom commands for last modified date at top right corner
+\usepackage{datetime}
+
+\newcommand{\lastupdated}{
+  \begin{tabular*}{\textwidth}{r@{\extracolsep{\fill}}l}
+    \textit{\small Last updated: \today} 
+  \end{tabular*}
+}
+
+
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{http://rahulsinghparmar.me/}{\Large Parmar Rahul Singh Satbir}} & Email : \href{mailto:rahulsinghparmar4@protonmail.com}{rahulsinghparmar4@protonmail.com}\\
   \href{https://github.com/RahulSinghParmar}{Github: @RahulSinghParmar} & Mobile : \href{tel:+919619896014}{+91-9619896014} \\
   \href{https://play.google.com/store/apps/dev?id=7488556007831738957}{Google Play Store} & \href{https://www.linkedin.com/in/rahul-singh-parmar-4a4b3b1a1/}{LinkedIn}\\
+  \textit{\small \href{http://rahulsinghparmar.me/}{\textbf{rahulsinghparmar.me}}}
 \end{tabular*}
 
 

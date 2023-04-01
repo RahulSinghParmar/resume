@@ -12,6 +12,16 @@
 *.cb2
 .*.lb
 
+*.DS_Store
+*.log
+*.toc
+*.aux
+*.nav
+*.out
+*.gz
+*.synctex(busy)
+*.synctex
+
 ## Intermediate documents:
 *.dvi
 *.xdv

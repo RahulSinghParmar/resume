@@ -14,7 +14,7 @@ This template attempts to **look clean**, highlight **details**, be a **single p
 
 - You can create your CV using this template on [Overleaf](https://www.overleaf.com/read/nvmkvmzkwrcs) very easily.
 - This CV is inspired by the design of [Awesome CV](https://github.com/posquit0/Awesome-CV).
-- You might think this as a simplified version. I created this project from scratch to learn Latex and the way I wrote might not be the best latex practices. However, it is easy to play with the high level functions provided in [CV.tex](https://github.com/RahulSinghParmar/resume/blob/master/CV.tex) file without going too much into the detail to have a certain level of expressiveness in your resume. The simplicity also makes it easy to understand what is going on and also enables to make low level customizations.
+- You might think this as a simplified version. I created this project from scratch to learn Latex and the way I wrote might not be the best latex practices. However, it is easy to play with the high level functions provided in [CV.tex](https://github.com/RahulSinghParmar/resume/blob/main/cv.tex) file without going too much into the detail to have a certain level of expressiveness in your resume. The simplicity also makes it easy to understand what is going on and also enables to make low level customizations.
 
 ### Build using Docker
 
@@ -32,7 +32,7 @@ docker run --rm -i -v "$PWD":/data latex pdflatex Rahul_resume.tex
 
 ### How to use it?
 
-- With minimum effort, you can use the [CV.tex](https://github.com/RahulSinghParmar/resume/blob/master/CV.tex) as it is provided with the high level functions such as ```\datedexperience```, ```\explanation```, ```\explanationdetail``` to add elements to your CV. You can create skill elements with ```\newcommand{\skillname{\createskill{<Skill Category>}{<explanation>}}}``` and finally create the list of skills with ```\createskills{<comma seperated skills list>}```.
+- With minimum effort, you can use the [CV.tex](https://github.com/RahulSinghParmar/resume/blob/main/cv.tex) as it is provided with the high level functions such as ```\datedexperience```, ```\explanation```, ```\explanationdetail``` to add elements to your CV. You can create skill elements with ```\newcommand{\skillname{\createskill{<Skill Category>}{<explanation>}}}``` and finally create the list of skills with ```\createskills{<comma seperated skills list>}```.
 - You can also use it for your **cover letter** by just using
 
    ```

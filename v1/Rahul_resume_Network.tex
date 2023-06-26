@@ -1,0 +1,305 @@
+%-------------------------
+% Resume in Latex
+% Author : Rahul Singh Parmar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%---------QR pac-----
+\usepackage{qrcode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+% Custom commands for last modified date at top right corner
+\usepackage{datetime}
+
+\newcommand{\lastupdated}{
+  \begin{tabular*}{\textwidth}{r@{\extracolsep{\fill}}l}
+    \textit{\small Last updated: \today} 
+  \end{tabular*}
+}
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://rahulsinghparmar.me/}{\Large Parmar Rahul Singh Satbir}} & Email : \href{mailto:rahulsinghparmar4@protonmail.com}{rahulsinghparmar4@protonmail.com}\\
+  \href{https://github.com/RahulSinghParmar}{Github: @RahulSinghParmar} & Mobile : \href{tel:+919619896014}{+91-9619896014} \\
+  \href{https://play.google.com/store/apps/dev?id=7488556007831738957}{Google Play Store} & \href{https://www.linkedin.com/in/rahul-singh-parmar-4a4b3b1a1/}{LinkedIn}\\
+  \textit{\small \href{http://rahulsinghparmar.me/}{\textbf{rahulsinghparmar.me}}}
+\end{tabular*}
+
+
+%--------------ABOUT------------------
+\section{About}
+{I am committed to building a successful career with an organization that provides opportunities to apply my
+theoretical, logical, and technical skills in a practical, real-world environment. Passionate network engineer with expertise in protocols, infrastructure design, and security. Effective communicator and problem-solver, adept at collaborating with cross-functional teams. Committed to continuous learning. 
+Eager to contribute to challenging projects, enhancing network performance and driving organizational growth.}
+% {Have excellent technical skills, motivated and enthusiastic by new
+% challenges and tasks and take excellent approach to achieve
+% success in all projects. I like to work in a complex projects which have
+% scope for learning and challenge.
+% I have experience in working with different operating system and
+% platforms namely Windows, UNIX, Linux and macOS.}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Thakur College of Engineering and Technology}{Mumbai, India}
+{B.E in Computer Engineering;  CGPI: 7.03}{Aug. 2016 -- July. 2021}
+\resumeSubheading
+{Thakur Vidya Mandir Jr College}{Mumbai, India}
+{HSC in Science   }{May. 2014 -- Feb. 2016}
+\resumeSubHeadingListEnd
+
+% %-----------EXPERIENCE-----------------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Shiv}{Mountain View, CA}
+%       {Software Engineer}{Oct 2016 - Present}
+%       \resumeItemListStart
+%         \resumeItem{Tensorflow}
+%           {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
+%         \resumeItem{Apache Beam}
+%           {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Coursera}{Mountain View, CA}
+%       {Senior Software Engineer}{Jan 2014 - Oct 2016}
+%       \resumeItemListStart
+%         \resumeItem{Notifications}
+%           {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
+%         \resumeItem{Nostos}
+%           {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
+%         \resumeItem{Workflows}
+%           {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
+%         \resumeItem{Data Collection}
+%           {Designed the internal survey and crowd sourcing platfowm which allowed for creating various tasks for crowd sourding or embedding surveys across the Coursera platform.}
+%         \resumeItem{Dev Environment}
+%           {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
+%         \resumeItem{Data Warehousing}
+%           {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
+%         \resumeItem{Recommendations}
+%           {Core service for all recommendation systems at Coursesa, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
+%         \resumeItem{Content Discovery}
+%           {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
+%         \resumeItem{Course Dashboards}
+%           {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Lucena Research}{Atlanta, GA}
+%       {Data Scientist}{Summer 2012 and 2013}
+%       \resumeItemListStart
+%         \resumeItem{Portfolio Management}
+%           {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
+%         \resumeItem{QuantDesk}
+%           {Python backend for a web application used by hedge fund managers for portfolio management.}
+%       \resumeItemListEnd
+
+%   \resumeSubHeadingListEnd
+
+
+%-----------Technical Skills-----------------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+
+  \resumeSubItem{Core Java}
+    {
+
+    ◦ Very strong knowledge on \textbf{OOPS} concepts like \textbf{Method overloading} and \textbf{Method overriding}.
+    ◦ Good knowledge on \textbf{Inheritance, Polymorphism}.
+    ◦ Having good knowledge on \textbf{Abstraction} and \textbf{Encapsulation}.
+    ◦ Strong knowledge on up \textbf{casting} and \textbf{down casting}.
+    ◦ Very good knowledge on \textbf{constructors} and \textbf{interface}.
+    ◦ Good practical knowledge on \textbf{Collection Frameworks} like List, Queue and Set.
+    ◦ Good in \textbf{Exception Handling} and written many custom Exceptions.
+    ◦ Having basic Knowledge on \textbf{threads}
+    }     
+
+  \resumeSubItem{Information And Technologies}
+    {
+
+      ◦ Monitored and maintained computer systems and networks, proactively detecting and mitigating potential issues. \\
+      ◦ Installed and configured computer hardware, OS, and applications for optimal performance and compatibility. \\
+      ◦ Stayed updated with technologies through continuous learning and testing, contributing to innovative solutions. \\
+      ◦ Demonstrated proficiency in server administration, troubleshooting, and adherence to best practices.
+      
+      }
+   
+  % \resumeSubItem{SERVLET}
+  %   {
+
+  %     ◦ Possessing good knowledge in servlets and \textbf{server side} programmings .
+  %     ◦ Possessing good knowledge of \textbf{JSP}.
+  %     ◦ Depth understanding of \textbf{Servlet} and \textbf{JSP implicit} objects.
+
+  %   }
+  
+  \resumeSubItem{SQL}
+    {
+
+      ◦ Good understanding of \textbf{RDBMS} concepts.
+      ◦ Exposure to \textbf{constraints} (PK, FK, NOTNULL, UNQ, CHECK).
+      ◦ Ability to write queries using \textbf{joins, sub queries, grouping} etc.
+      ◦ Knowledge of \textbf{DDL, DML, TCL.}
+
+    }
+    \resumeSubHeadingListEnd
+
+    %Created & Managing the linux server with Home multiMedia server(jellyfin), Web server(Apache), File server (NextCloud), SMB server (windows Network file manager), SSH server etc. Configuring Router and Switche \\
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{HomeLab Server}
+{Created and managed a Linux server with various functionalities, including a home multimedia server (Jellyfin), web server (Apache), file server (Nextcloud), SMB server (Windows Network File Manager), SSH etc.}
+\resumeSubItem{Endless Runner Game}
+{A fun game made using unity based on concept of game \href{https://play.google.com/store/apps/details?id=com.rahulsinghparmar}{‘Zig-Zag’}.}
+\resumeSubItem{Java-Core Programmings}
+{Open Source from basic \href{https://github.com/RahulSinghParmar/JAVA-Core}{java-core} Programming and OOPS concept.}
+\resumeSubItem{CustomPCBuilder}
+{A simple java application to build \href{https://github.com/RahulSinghParmar/CustomPcBuild}{custom PC} using basic OOP opertion.}
+\resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\item{
+            \textbf{Programming language }{: \textit{\small \textbf{Experienced:}} JAVA, SQL, J2EE \textit{\small \textbf{Familiar:}} Python, JavaScript, HTML, CSS}
+      }
+\item {
+            \textbf{Software Developmenent}{: My-SQL and Oracle DBMS, GIT, JDBC, Jakarta EE, Servlet, JSPs, Maven }
+      }
+\item{
+            \textbf{framework and libraries }{: Spring, Hibernate, Apache Tomcat, Java Servlet API, MySQL Connector/J}
+      }
+\item{
+        \textbf{Neyworking }{: VMware, AWS, PowerShell, Data backups, System upgrades, TCP/IP, DHCP, DNS, VPN, VLAN, Firewalls and VPNs, Network Administration }
+      }
+% \item{
+%             \textbf{Technologies}{: RDP, AWS ec2, GitHub, Network Administration, Virtual Machine}
+%       }
+% \item{
+%             \textbf{OS}{: Windows Server, RHEL, MacOS, Debian, Ubuntu}
+%       }
+
+% \item{
+%             \textbf{Tools and IDE’S }{: Vim, IntelliJ IDEA, Eclipse, VScode, MySql WorkBench, Oracle 10g, Unity Engine}
+%       }
+% \item {
+%             \textbf{language}{: \textit{\small \textbf{Native:}} Hindi \textit{\small \textbf{Fluent:}} English }
+%       }
+\resumeSubHeadingListEnd
+
+
+
+%-----------QR code-----------------
+% \quad
+% {Scan this QR code to Download my Resume in PDF format }
+% % change size of QR code with height=1in
+% \qrcode[height=1in]{https://github.com/RahulSinghParmar/resume/blob/main/Rahul_resume.pdf}
+% \qquad
+
+%-------------------------------------------
+\end{document}

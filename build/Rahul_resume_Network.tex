@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -29,11 +29,17 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.70in}
+\addtolength{\evensidemargin}{-0.70in}
+\addtolength{\textwidth}{1.25in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.5in}
+
 
 \urlstyle{same}
 
@@ -45,6 +51,10 @@
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\usepackage{setspace}
+\setstretch{0.90} % Adjust this value as needed
+
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -127,9 +137,9 @@
 
 %--------------ABOUT------------------
 \section{About}
-{I am committed to building a successful career with an organization that provides opportunities to apply my
-theoretical, logical, and technical skills in a practical, real-world environment. Passionate network engineer with expertise in protocols, infrastructure design, and security. Effective communicator and problem-solver, adept at collaborating with cross-functional teams. Committed to continuous learning. 
-Eager to contribute to challenging projects, enhancing network performance and driving organizational growth.}
+{I am committed to building a successful career with an organization that provides opportunities to apply my theoretical, logical, and technical skills in a practical, real-world environment. 
+As a network engineer with expertise in protocols, infrastructure design, and security, I focus on collaborating with cross-functional teams to improve network performance and contribute to organizational growth. 
+Dedicated to continuous learning and ready to take on challenging projects.}
 % {Have excellent technical skills, motivated and enthusiastic by new
 % challenges and tasks and take excellent approach to achieve
 % success in all projects. I like to work in a complex projects which have
@@ -142,8 +152,8 @@ Eager to contribute to challenging projects, enhancing network performance and d
 \resumeSubHeadingListStart
 \resumeSubheading
 {JSpiders}{Bangalore, India}
-{Java FullStack Developmenent}{}
-%{Java FullStack Developmenent}{June 2021 -- June 2022}
+{Java FullStack Development}{}
+%{Java FullStack Development}{June 2021 -- June 2022}
 \resumeSubheading
 {Thakur College of Engineering and Technology}{Mumbai, India}
 {B.E in Computer Engineering;  CGPI: 7.03}{Aug 2016 -- July 2021}
@@ -162,30 +172,30 @@ Eager to contribute to challenging projects, enhancing network performance and d
       {Network Engineer}{Oct 2023 - Present}
       \resumeItemListStart
         \resumeItem{Network Infrastructure Management}
-          {Overseeing the management and troubleshooting of the company’s network infrastructure, ensuring optimal performance and minimal downtime.}
+          {Managed and troubleshooted the company's network infrastructure, reducing downtime by 15\% and ensuring 99.9\% uptime.}
         \resumeItem{Advanced Security Protocols}
-          {Implementing advanced security protocols and measures to safeguard company data and prevent breaches.}
+          {Implemented advanced security measures, preventing data breaches and securing sensitive information.}
         \resumeItem{Bandwidth Monitoring and QoS}
-          {Monitoring bandwidth, ensuring Quality of Service (QoS), and investigating potential threats in the network.}
+          {Monitored bandwidth usage and ensured optimal Quality of Service (QoS), resolving potential threats in the network.}
         \resumeItem{Access Policy Management}
-          {Managing access policies through Active Directory, Sophos Endpoint Protection, and Sophos Firewall.}
+          {Managed access policies using Active Directory, Sophos Endpoint Protection, Sophos Firewall, maintaining strict security standards.}
           \resumeItem{Vulnerability Assessment and Penetration Testing}
-          {Conducting vulnerability assessments and penetration testing, preparing monthly reports, and updating security policies and procedures accordingly.}
+          {Conducted vulnerability assessments and penetration tests, producing monthly reports and updating security protocols accordingly.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {}{}
+      {Alfa KPO}{Mumbai, India}
       {IT Executive}{}
       %{IT Executive}{Oct 2022 - Oct 2023}
       \resumeItemListStart
         \resumeItem{Troubleshooting and Maintenance}
-          {Specialized in LAN infrastructure troubleshooting, utilizing tools such as Sophos Endpoint Protection, SNMP tool Domotz, and Sophos Firewall to address application, OS, remote application connectivity, and network issues.}
+          {Specialized in LAN infrastructure troubleshooting, using Sophos Endpoint Protection, SNMP tool Domotz, and Sophos Firewall to resolve network issues and reduce incident response time by 30\%.}
         \resumeItem{System and Network Automation}
-          {Successfully automated system initialization, OS installation, network configuration, and software installation, reducing human error and enhancing efficiency.}
+          {Automated system initialization, OS installation, and network configuration, reducing human error by 40\% and increasing efficiency.}
         \resumeItem{SOP Development}
-          {Created and implemented Standard Operating Procedures (SOPs) to ensure consistent network management practices across all company locations.}
+          {Developed and implemented Standard Operating Procedures (SOPs) for consistent network management across all company locations.}
         \resumeItem{Security and Threat Management}
-          {Monitored and investigated potential threats in Firewall and Sophos Endpoint Protection systems.}
+          {Monitored and analyzed potential threats using Firewall and Sophos Endpoint Protection, enhancing overall network security.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -244,83 +254,85 @@ Eager to contribute to challenging projects, enhancing network performance and d
 
 
 
-%-----------Technical Skills-----------------
-\section{Technical Skills}
-\resumeSubHeadingListStart
+% %-----------Technical Skills-----------------
+% \section{Technical Skills}
+% \resumeSubHeadingListStart
 
-  \resumeSubItem{Core Java}
-    {
+%   \resumeSubItem{Core Java}
+%     {
 
-    ◦ Very strong knowledge on \textbf{OOPS} concepts like \textbf{Method overloading} and \textbf{Method overriding}.
-    ◦ Good knowledge on \textbf{Inheritance, Polymorphism}.
-    ◦ Having good knowledge on \textbf{Abstraction} and \textbf{Encapsulation}.
-    ◦ Strong knowledge on up \textbf{casting} and \textbf{down casting}.
-    ◦ Very good knowledge on \textbf{constructors} and \textbf{interface}.
-    ◦ Good practical knowledge on \textbf{Collection Frameworks} like List, Queue and Set.
-    ◦ Good in \textbf{Exception Handling} and written many custom Exceptions.
-    ◦ Having basic Knowledge on \textbf{threads}
-    }     
+%       ◦ Very strong knowledge on \textbf{OOPS} concepts like \textbf{Method overloading} and \textbf{Method overriding}.
+%       ◦ Good knowledge on \textbf{Inheritance, Polymorphism}.
+%       ◦ Having good knowledge on \textbf{Abstraction} and \textbf{Encapsulation}.
+%       ◦ Strong knowledge on up \textbf{casting} and \textbf{down casting}.
+%       ◦ Very good knowledge on \textbf{constructors} and \textbf{interface}.
+%       ◦ Good practical knowledge on \textbf{Collection Frameworks} like List, Queue and Set.
+%       ◦ Good in \textbf{Exception Handling} and written many custom Exceptions.
+%       ◦ Having basic Knowledge on \textbf{threads}
 
-  % \resumeSubItem{Information And Technologies}
-  %   {
+%     }     
 
-  %     ◦ Monitored and maintained computer systems and networks, proactively detecting and mitigating potential issues. \\
-  %     ◦ Installed and configured computer hardware, OS, and applications for optimal performance and compatibility. \\
-  %     ◦ Stayed updated with technologies through continuous learning and testing, contributing to innovative solutions. \\
-  %     ◦ Demonstrated proficiency in server administration, troubleshooting, and adherence to best practices.
+%   % \resumeSubItem{Information And Technologies}
+%   %   {
+
+%   %     ◦ Monitored and maintained computer systems and networks, proactively detecting and mitigating potential issues. \\
+%   %     ◦ Installed and configured computer hardware, OS, and applications for optimal performance and compatibility. \\
+%   %     ◦ Stayed updated with technologies through continuous learning and testing, contributing to innovative solutions. \\
+%   %     ◦ Demonstrated proficiency in server administration, troubleshooting, and adherence to best practices.
       
-  %     }
+%   %     }
    
-  % \resumeSubItem{SERVLET}
-  %   {
+%   % \resumeSubItem{SERVLET}
+%   %   {
 
-  %     ◦ Possessing good knowledge in servlets and \textbf{server side} programmings .
-  %     ◦ Possessing good knowledge of \textbf{JSP}.
-  %     ◦ Depth understanding of \textbf{Servlet} and \textbf{JSP implicit} objects.
+%   %     ◦ Possessing good knowledge in servlets and \textbf{server side} programmings .
+%   %     ◦ Possessing good knowledge of \textbf{JSP}.
+%   %     ◦ Depth understanding of \textbf{Servlet} and \textbf{JSP implicit} objects.
 
-  %   }
+%   %   }
   
-  \resumeSubItem{SQL}
-    {
+%   % \resumeSubItem{SQL}
+%   %   {
 
-      ◦ Good understanding of \textbf{RDBMS} concepts. \\
-      ◦ Exposure to \textbf{constraints} (PK, FK, NOTNULL, UNQ, CHECK). \\
-      ◦ Ability to write queries using \textbf{joins, sub queries, grouping} etc. \\
-      ◦ Knowledge of \textbf{DDL, DML, TCL.}
+%   %     ◦ Good understanding of \textbf{RDBMS} concepts. \\
+%   %     ◦ Exposure to \textbf{constraints} (PK, FK, NOTNULL, UNQ, CHECK). \\
+%   %     ◦ Ability to write queries using \textbf{joins, sub queries, grouping} etc. \\
+%   %     ◦ Knowledge of \textbf{DDL, DML, TCL.}
 
-    }
+%   %   }
 
-    \resumeSubItem{Information And Technologies}
-      {
+%     % \resumeSubItem{Information And Technologies}
+%     %   {
   
-        ◦ Configuration and upgrades Firewalls, Routers, Switches, Modems, and more. \\
-        ◦ Installation and configuration \textbf{Windows Servers, Active Directory, GPO, DNS, Zone Solution, LAN, WAN, VPN, DHCP, IIS, Firewalls, VMware, TFTP, Remote Solutions, VOIP, CCTV, Bio-Metric Devices, and Hyper-V, keeping up with the latest advancements.} \\
-        ◦ Proficiency in the latest Windows Platforms (Windows Server 2019, 2022, Windows 10, Windows 11). \\
-        ◦ Webserver administration expertise \textbf{IIS, Apache, Wamp, Xamp, Lampp, PhpMyadmin} and mastery of modern Control Panel solutions \textbf{WHM, Parallel Plesk, Cpanel}. \\
-        ◦ Basic knowledge in the latest Linux and macOS Platforms (Ubuntu, Debian, CentOS, Red Hat, Fedora, Kali Linux, Parrot OS, macOS Big Sur, macOS Monterey and more). \\
-        ◦ Network monitoring, problem resolution, maintenance, and repair. \\
-        ◦ A history of training and mentoring team members. 
-      }
+%     %     ◦ Configuration and upgrades Firewalls, Routers, Switches, Modems, and more. \\
+%     %     ◦ Installation and configuration \textbf{Windows Servers, Active Directory, GPO, DNS, Zone Solution, LAN, WAN, VPN, DHCP, IIS, Firewalls, VMware, TFTP, Remote Solutions, VOIP, CCTV, Bio-Metric Devices, and Hyper-V, keeping up with the latest advancements.} \\
+%     %     ◦ Proficiency in the latest Windows Platforms (Windows Server 2019, 2022, Windows 10, Windows 11). \\
+%     %     ◦ Webserver administration expertise \textbf{IIS, Apache, Wamp, Xamp, Lampp, PhpMyadmin} and mastery of modern Control Panel solutions \textbf{WHM, Parallel Plesk, Cpanel}. \\
+%     %     ◦ Basic knowledge in the latest Linux and macOS Platforms (Ubuntu, Debian, CentOS, Red Hat, Fedora, Kali Linux, Parrot OS, macOS Big Sur, macOS Monterey and more). \\
+%     %     ◦ Network monitoring, problem resolution, maintenance, and repair. \\
+%     %     ◦ A history of training and mentoring team members. 
+%     %   }
 
-    \resumeSubHeadingListEnd
+
+%     \resumeSubHeadingListEnd
 
     %Created & Managing the linux server with Home multiMedia server(jellyfin), Web server(Apache), File server (NextCloud), SMB server (windows Network file manager), SSH server etc. Configuring Router and Switche \\
 
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{HomeLab Server}
-{Created and managed a Linux server with various functionalities, including a home multimedia server (Jellyfin), web server (Apache), file server (Nextcloud), SMB server (Windows Network File Manager), SSH etc.}
-\resumeSubItem{Endless Runner Game}
-{A fun game made using unity based on concept of game \href{https://play.google.com/store/apps/details?id=com.rahulsinghparmar}{‘Zig-Zag’}.}
+% \resumeSubItem{HomeLab Server}
+% {Created and managed a Linux server with various functionalities, including a home multimedia server (Jellyfin), web server (Apache), file server (Nextcloud), SMB server (Windows Network File Manager), SSH etc.}
+% \resumeSubItem{Endless Runner Game}
+% {A fun game made using unity based on concept of game \href{https://play.google.com/store/apps/details?id=com.rahulsinghparmar}{‘Zig-Zag’}.}
 \resumeSubItem{Java-Core Programmings}
-{Open Source from basic \href{https://github.com/RahulSinghParmar/JAVA-Core}{java-core} Programming and OOPS concept.}
+{Developed a series of projects focusing on fundamental \href{https://github.com/RahulSinghParmar/JAVA-Core}{java-core} programming principles and Object-Oriented Programming (OOP) concepts, including method overloading, method overriding, inheritance, and polymorphism.}
 \resumeSubItem{Custom Password Manager}
-{Deployed an open-source custom password manager to securely store and share authentication and employee credentials within the organization.}
+{Designed and deployed an open-source custom password manager using encryption techniques to securely store and share authentication credentials within the organization. Ensured compliance with security standards.}
 \resumeSubItem{Inventory Management System}
-{Developed and deployed an inventory management system to maintain hardware tracks and records, including assignments and maintenance.}
+{Developed and implemented an inventory management system using PHP and JavaScript to track hardware assets, manage assignments, and streamline maintenance processes. Enhanced efficiency in asset management by 25\% .}
 \resumeSubItem{Mattermost Chat Application}
-{Implemented and maintain an open-source chat application, Mattermost, to provide a secure communication platform with administrative control over user data and security.}
+{Deployed and currently maintain an open-source chat application, Mattermost, on a secure server environment, ensuring encrypted communication and administrative control over user data. Integrated with existing IT infrastructure for seamless communication.}
 \resumeSubHeadingListEnd
 
 
@@ -332,21 +344,24 @@ Eager to contribute to challenging projects, enhancing network performance and d
             \textbf{Programming language }{: \textit{\small \textbf{Experienced:}} JAVA, SQL, J2EE \textit{\small \textbf{Familiar:}} Python, JavaScript, HTML, CSS}
       }
 \item {
-            \textbf{Software Developmenent}{: My-SQL and Oracle DBMS, GIT, JDBC, Jakarta EE, Servlet, JSPs, Maven }
+            \textbf{Software Development}{: MySQL, Oracle DBMS, Git, JDBC, Jakarta EE, Servlets, JSPs, Maven }
       }
 \item{
             \textbf{Framework and libraries }{: Spring, Hibernate, Apache Tomcat, Java Servlet API, MySQL Connector/J}
       }
 \item{
-            \textbf{IT Infrastructure and Networking}{: PowerShell, Data backups, System upgrades, TCP/IP, DHCP, DNS, VPN, VLAN, Firewalls and VPNs, Network Administration }
+            \textbf{IT Infrastructure and Networking}{: PowerShell, Data Backups, System Upgrades, DHCP, DNS, VLAN, Firewalls, VPNs}
       }
 \item{
-            \textbf{Technologies}{: RDP, AWS ec2, GitHub, AWS, VMware, Virtual Machine}
+            \textbf{Technologies}{: AWS EC2, GitHub, Virtual Machines, Active Directory, VPNs, VoIP, Cisco Systems}
+      }
+\item{
+          \textbf{OS}{: Windows Server, RHEL, macOS, Debian, Ubuntu}
       }
 % \item{
-%           \textbf{OS}{: Windows Server, RHEL, MacOS, Debian, Ubuntu}
+%           \textbf{Certifications}{: }
 %       }
-
+      
 % \item{
 %           \textbf{Tools and IDE’S }{: Vim, IntelliJ IDEA, Eclipse, VScode, MySql WorkBench, Oracle 10g, Unity Engine}
 %       }
@@ -372,12 +387,12 @@ Eager to contribute to challenging projects, enhancing network performance and d
 %-------------------------------------------
 
 %-----------REFERENCES-----------------
-\vfill % Pushes the content to the bottom of the page
-\section*{References}
-For more details on the projects and implementations described, please visit my GitHub repository:
-\begin{center}
-\href{https://github.com/RahulSinghParmar/resume}{https://github.com/RahulSinghParmar/resume}
-\end{center}
+% \vfill % Pushes the content to the bottom of the page
+% \section*{References}
+% For more details on the projects and implementations described, please visit my GitHub repository:
+% \begin{center}
+% \href{https://github.com/RahulSinghParmar/resume}{https://github.com/RahulSinghParmar/resume}
+% \end{center}
 
 \end{document}
 

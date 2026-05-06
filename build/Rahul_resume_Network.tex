@@ -27,6 +27,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{0.25in}
 
 % Adjust margins
 % \addtolength{\oddsidemargin}{-0.5in}
@@ -60,12 +61,17 @@
 \pdfgentounicode=1
 
 %-------------------------
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+% % Custom commands
+% \newcommand{\resumeItem}[2]{
+%   \item\small{
+%     \textbf{#1}{: #2 \vspace{-2pt}}
+%   }
+% }
+%  new command for resume item with no bullet point
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
 }
+
 
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
@@ -89,7 +95,14 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+%--- Resume item with sub bullet points
+%\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% Resume item with sub bullet points and no bullet point for main item
+\newcommand{\resumeSubItem}[2]{
+  \item\small{\textbf{#1} -- #2 \vspace{-2pt}}
+}
+
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -128,18 +141,16 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://rahulsinghparmar.online/}{\Large Parmar Rahul Singh Satbir}} & Email : \href{mailto:rahulsinghparmar4@protonmail.com}{rahulsinghparmar4@protonmail.com}\\
+  \textbf{\href{https://rahulsinghparmar.site/}{\Large Parmar Rahul Singh Satbir}} & Email : \href{mailto:rahulsinghparmar4@protonmail.com}{rahulsinghparmar4@protonmail.com}\\
   \href{https://github.com/RahulSinghParmar}{Github: @RahulSinghParmar} & Mobile : \href{tel:+919619896014}{+91-9619896014} \\
-  \href{https://play.google.com/store/apps/dev?id=7488556007831738957}{Google Play Store} & \href{https://www.linkedin.com/in/rahul-singh-2b27211a7/}{LinkedIn}\\
-  \textit{\small \href{http://rahulsinghparmar.online/}{\textbf{rahulsinghparmar.online}}}
+  %\href{https://play.google.com/store/apps/dev?id=7488556007831738957}{Google Play Store} & \href{https://www.linkedin.com/in/rahul-singh-2b27211a7/}{LinkedIn}\\
+  \textit{\small \href{https://rahulsinghparmar.site/}{\textbf{rahulsinghparmar.site}}} & \href{https://www.linkedin.com/in/rahulsinghparmar4/}{LinkedIn}\\
 \end{tabular*}
 
 
 %--------------ABOUT------------------
-\section{About}
-{I am committed to building a successful career with an organization that provides opportunities to apply my theoretical, logical, and technical skills in a practical, real-world environment. 
-As a network engineer with expertise in protocols, infrastructure design, and security, I focus on collaborating with cross-functional teams to improve network performance and contribute to organizational growth. 
-Dedicated to continuous learning and ready to take on challenging projects.}
+\section{Summary}
+Results-driven \textbf{Network Engineer and Team Lead} with 3+ years of experience in \textbf{enterprise network infrastructure, system administration, and security}. Experienced in managing \textbf{Cisco networks, Sophos Firewall, Active Directory, VLAN, VPN, and monitoring systems}, ensuring \textbf{high availability and performance}. Skilled in \textbf{Microsoft 365, Google Workspace, and endpoint policy management}, with a focus on \textbf{access control, compliance, and security}. Hands-on exposure to \textbf{cloud platforms (AWS EC2), automation using PowerShell, and basic Linux administration}, with a growing focus on \textbf{infrastructure automation and modern IT practices}.
 % {Have excellent technical skills, motivated and enthusiastic by new
 % challenges and tasks and take excellent approach to achieve
 % success in all projects. I like to work in a complex projects which have
@@ -150,17 +161,31 @@ Dedicated to continuous learning and ready to take on challenging projects.}
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
-\resumeSubheading
-{JSpiders}{Bangalore, India}
-{Java FullStack Development}{}
-%{Java FullStack Development}{June 2021 -- June 2022}
-\resumeSubheading
-{Thakur College of Engineering and Technology}{Mumbai, India}
-{B.E in Computer Engineering;  CGPI: 7.03}{Aug 2016 -- July 2021}
-\resumeSubheading
-{Thakur Vidya Mandir Jr College}{Mumbai, India}
-{HSC in Science   }{May 2014 -- Feb 2016}
+  \resumeSubheading
+    {JSpiders}{Bangalore, India}
+    {Java FullStack Development}{}
+    %{Java FullStack Development}{June 2021 -- June 2022}
+  \resumeSubheading
+    {Thakur College of Engineering and Technology}{Mumbai, India}
+    {B.E in Computer Engineering;  CGPI: 7.03}{Aug 2016 -- July 2021}
+  \resumeSubheading
+    {Thakur Vidya Mandir Jr College}{Mumbai, India}
+    {HSC in Science   }{May 2014 -- Feb 2016}
 \resumeSubHeadingListEnd
+
+%-----------CORE COMPETENCIES-----------------
+\section{Core Competencies}
+\resumeItemListStart
+
+\resumeItem{Network Infrastructure Management \textbar\ System Administration \textbar\ Firewall \& Security}
+
+\resumeItem{Active Directory \textbar\ Microsoft 365 \textbar\ Google Workspace}
+
+\resumeItem{Incident Management \textbar\ Troubleshooting \textbar\ SLA Compliance}
+
+\resumeItem{Cloud Exposure (AWS) \textbar\ Automation (PowerShell) \textbar\ Linux Basics}
+
+\resumeItemListEnd
 
 
 %-----------EXPERIENCE-----------------
@@ -168,41 +193,45 @@ Dedicated to continuous learning and ready to take on challenging projects.}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Alfa KPO}{Mumbai, India}
-      {Network Engineer}{June 2023 - Present}
+      {TasksEveryDay \textbar\ TeamsPH}{Remote, USA \& Philippines}
+      {Network Engineer – Team Lead}{July 2025 - Present}
       \resumeItemListStart
-        \resumeItem{Network Infrastructure Management}
-          {Managed and troubleshooted the company's network infrastructure, reducing downtime by 15\% and ensuring 99.9\% uptime.}
-        \resumeItem{Network Administration}
-          {Configured VLANs, static routing on Brocade L3 and Cisco switches, and assigned IP addresses for user systems, ensuring seamless network connectivity.}
-        \resumeItem{Advanced Security Protocols}
-          {Implemented advanced security measures, preventing data breaches and securing sensitive information.}
-        \resumeItem{Bandwidth Monitoring and QoS}
-          {Monitored bandwidth usage and ensured optimal Quality of Service (QoS), resolving potential threats in the network.}
-        \resumeItem{Access Policy Management}
-          {Managed access policies using Active Directory, Sophos Endpoint Protection, Sophos Firewall, maintaining strict security standards.}
-        \resumeItem{SOP Development}
-          {Developed and implemented Standard Operating Procedures (SOPs) for consistent network management across all company locations.}
-        \resumeItem{Vulnerability Assessment and Penetration Testing}
-          {Conducted vulnerability assessments and penetration tests, producing monthly reports and updating security protocols accordingly.}
-      \resumeItemListEnd
+        \resumeItem{Led a team of \textbf{network and IT support engineers}, managing operations and performance tracking.}
+        \resumeItem{Oversaw \textbf{multi-location network infrastructure}, ensuring high availability and reliability.}
+        \resumeItem{Acted as \textbf{primary escalation point} for critical incidents, improving SLA compliance.}
+        \resumeItem{Managed \textbf{firewall policies, endpoint security, and access control} using Active Directory and Sophos.}
+        \resumeItem{Administered \textbf{Microsoft 365} and \textbf{Google Workspace}, including user access and policy management.}
+        \resumeItem{Enforced \textbf{Chrome and Edge policies} to secure and standardize user environments.}
+        \resumeItem{Led \textbf{infrastructure upgrades} and implemented SOPs, improving efficiency.}
+        \resumeItem{Collaborated with \textbf{stakeholders, vendors, and teams} to align IT operations with business needs.}
+    \resumeItemListEnd
 
     \resumeSubheading
       {Alfa KPO}{Mumbai, India}
-      {IT Executive}{}
-      %{IT Executive}{Oct 2022 - Oct 2023}
+      {Network Engineer}{July 2024 - August 2025}
       \resumeItemListStart
-        \resumeItem{Security and Threat Management}
-          {Specialized in LAN infrastructure troubleshooting, using Sophos Endpoint Protection, SNMP tool Domotz, and Sophos Firewall to resolve network issues and reduce incident response time by 30\%.}
-        \resumeItem{Server and Network Monitoring}
-          {Regularly monitored server racks, network uplinks, and hardware to ensure optimal performance and minimize downtime.}
-        \resumeItem{Hardware and Software Support}
-          {Managed over 1,300 workstations, handled software installations, domain logins, local portal setups, and provided remote support through Zoho IT ticketing system.}
-        \resumeItem{Email and Server Access Management}
-          {Configured and troubleshot Outlook (POP/IMAP, SMTP, Exchange) and managed server access rights, file sharing, and permissions.}
-        \resumeItem{CCTV and Alarm Systems}
-          {Configured and maintained CCTV systems, DVRs, alarms, and sound systems to support organizational safety.}
-      \resumeItemListEnd
+        \resumeItem{Managed and troubleshot \textbf{enterprise network infrastructure}, achieving \textbf{99.9\% uptime} and reducing downtime by \textbf{15\%}.}
+        \resumeItem{Configured \textbf{VLANs, IP addressing, and static routing} on Cisco and Brocade Layer 3 switches.}
+        \resumeItem{Implemented and managed \textbf{Sophos Firewall} and \textbf{Endpoint Protection}, strengthening security posture.}
+        \resumeItem{Monitored \textbf{network performance, bandwidth utilization, and QoS}, ensuring optimized connectivity.}
+        \resumeItem{Administered \textbf{Active Directory}, including user access, group policies, and permissions.}
+        \resumeItem{Conducted \textbf{Vulnerability Assessment and Penetration Testing (VAPT)} and generated security reports.}
+        \resumeItem{Developed and maintained \textbf{network SOPs}, improving operational consistency.}
+        \resumeItem{Diagnosed and resolved \textbf{network and security issues}, minimizing system disruptions.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Alfa KPO}{Mumbai, India}
+      {IT Executive}{June 2023 - July 2024}
+      \resumeItemListStart
+        \resumeItem{Provided technical support for \textbf{1300+ systems}, handling hardware, software, and network issues.}
+        \resumeItem{Troubleshot \textbf{LAN infrastructure} using SNMP tools (Domotz) and firewall diagnostics.}
+        \resumeItem{Monitored \textbf{server infrastructure, racks, and uplinks} to ensure continuous availability.}
+        \resumeItem{Managed \textbf{system configurations, domain logins, and software installations}.}
+        \resumeItem{Configured and supported \textbf{email services} (Outlook, POP/IMAP/SMTP, Exchange).}
+        \resumeItem{Delivered \textbf{remote support} using Zoho Desk, ensuring timely resolution.}
+        \resumeItem{Maintained \textbf{CCTV, DVR, and alarm systems} for organizational security.}
+    \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -331,74 +360,93 @@ Dedicated to continuous learning and ready to take on challenging projects.}
 % {Created and managed a Linux server with various functionalities, including a home multimedia server (Jellyfin), web server (Apache), file server (Nextcloud), SMB server (Windows Network File Manager), SSH etc.}
 % \resumeSubItem{Endless Runner Game}
 % {A fun game made using unity based on concept of game \href{https://play.google.com/store/apps/details?id=com.rahulsinghparmar}{‘Zig-Zag’}.}
-\resumeSubItem{Java-Core Programmings}
-{Developed a series of projects focusing on fundamental \href{https://github.com/RahulSinghParmar/JAVA-Core}{java-core} programming principles and Object-Oriented Programming (OOP) concepts, including method overloading, method overriding, inheritance, and polymorphism.}
-\resumeSubItem{Custom Password Manager}
-{Designed and deployed an open-source custom password manager using encryption techniques to securely store and share authentication credentials within the organization. Ensured compliance with security standards.}
-\resumeSubItem{Inventory Management System}
-{Developed and implemented an inventory management system using PHP and JavaScript to track hardware assets, manage assignments, and streamline maintenance processes. Enhanced efficiency in asset management by 25\% .}
-\resumeSubItem{Mattermost Chat Application}
-{Deployed and currently maintain an open-source chat application, Mattermost, on a secure server environment, ensuring encrypted communication and administrative control over user data. Integrated with existing IT infrastructure for seamless communication.}
+  \resumeSubItem{Java-Core Programmings}
+    {Developed a series of projects focusing on fundamental \href{https://github.com/RahulSinghParmar/JAVA-Core}{java-core} programming principles and Object-Oriented Programming (OOP) concepts, including method overloading, method overriding, inheritance, and polymorphism.}
+  \resumeSubItem{Custom Password Manager}
+    {Designed and deployed an open-source custom password manager using encryption techniques to securely store and share authentication credentials within the organization. Ensured compliance with security standards.}
+  \resumeSubItem{Inventory Management System}
+    {Developed and implemented an inventory management system using PHP and JavaScript to track hardware assets, manage assignments, and streamline maintenance processes. Enhanced efficiency in asset management by 25\% .}
+  \resumeSubItem{Mattermost Chat Application}
+    {Deployed and currently maintain an open-source chat application, Mattermost, on a secure server environment, ensuring encrypted communication and administrative control over user data. Integrated with existing IT infrastructure for seamless communication.}
 \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+\resumeItemListStart
+
+\resumeItem{\textbf{AWS Certified Cloud Practitioner} (In Progress)}
+
+\resumeItem{\textbf{Cisco CCNA} (In Progress)}
+
+\resumeItem{\textbf{Microsoft Certified: Azure Fundamentals} (Planned)}
+
+\resumeItemListEnd
 
 
 %
 %--------PROGRAMMING SKILLS------------
+%--------SKILLS------------
 \section{Skills}
 \resumeSubHeadingListStart
-\item{
-            \textbf{Programming language }{: \textit{\small \textbf{Experienced:}} JAVA, SQL, J2EE \textit{\small \textbf{Familiar:}} Python, JavaScript, HTML, CSS}
-      }
-\item {
-            \textbf{Software Development}{: MySQL, Oracle DBMS, Git, JDBC, Jakarta EE, Servlets, JSPs, Maven }
-      }
-\item{
-            \textbf{Framework and libraries }{: Spring, Hibernate, Apache Tomcat, Java Servlet API, MySQL Connector/J}
-      }
-\item{
-            \textbf{IT Infrastructure and Networking}{: PowerShell, Data Backups, System Upgrades, DHCP, DNS, VLAN, Firewalls, VPNs}
-      }
-\item{
-            \textbf{Technologies}{: AWS EC2, GitHub, Virtual Machines, Active Directory, VPNs, VoIP, Cisco Systems}
-      }
-% \item{
-%           \textbf{OS}{: Windows Server, RHEL, macOS, Debian, Ubuntu}
-%       }
-% \item{
-%           \textbf{Certifications}{: }
-%       }
-      
-% \item{
-%           \textbf{Tools and IDE’S }{: Vim, IntelliJ IDEA, Eclipse, VScode, MySql WorkBench, Oracle 10g, Unity Engine}
-%       }
-\item {
-            \textbf{Language}{: \textit{\small \textbf{Native:}} Hindi \textit{\small \textbf{Fluent:}} English \textit{\small \textbf{Familiarity:}} French}
-      }
+
+  \item{
+    \textbf{Networking}{: VLAN, DHCP, DNS, TCP/IP, VPN, QoS, Cisco Switching, Routing, Network Troubleshooting}
+  }
+  \item{
+    \textbf{Security}{: Sophos Firewall, Endpoint Protection, Access Control, VAPT, Network Security, Security Policies}
+  }
+  \item{
+    \textbf{System Administration}{: Windows Server, Active Directory, Group Policy, User \& Access Management, System Hardening}
+  }
+  \item{
+    \textbf{Cloud \& Platforms}{: AWS EC2, Microsoft 365, Google Workspace, Basic Cloud Networking}
+  }
+  \item{
+    \textbf{Monitoring \& Tools}{: Domotz, Zoho Desk, Network Monitoring Tools, Incident Management}
+  }
+  \item{
+    \textbf{Automation \& Scripting}{: PowerShell, Bash (Basic), Task Automation (Basic)}
+  }
+  \item{
+    \textbf{Infrastructure}{: Virtualization, Backup \& Recovery, VoIP, CCTV Systems, High Availability}
+  }
+  \item{
+    \textbf{Operating Systems}{: Windows, Linux (Basic Administration)}
+  }
+  \item{
+    \textbf{Version Control}{: Git (Basic)}
+  }
+  \item{
+    \textbf{Programming}{: Java (Basic), Python (Basic)}
+  }
+  \item{
+    \textbf{Language}{: \textit{\small \textbf{Native:}} Hindi \textit{\small \textbf{Fluent:}} English \textit{\small \textbf{Familiar:}} French}
+  }
 \resumeSubHeadingListEnd
 
 
 
 %-----------QR code-----------------
-% \vfill
-% \section*{References}
-% \quad
-% {Scan this QR code to Download my Resume in PDF format }
-% % change size of QR code with height=1in
-% \begin{center}
-%   \qrcode[height=1in]{https://github.com/RahulSinghParmar/resume/blob/main/v1/Rahul_resume_Network.pdf}
-% \end{center}
+%  \vfill % Pushes the content to the bottom of the page
+%  \section*{References}
+%  \quad
+%  {Scan this QR code to Download my Resume in PDF format }
+%  % change size of QR code with height=1in
+%  \begin{center}
+%    \qrcode[height=1in]{https://github.com/RahulSinghParmar/resume/blob/main/build/Rahul_resume_Network.pdf}
+%  \end{center}
 
-% \qquad
+%   \qquad
 
-%-------------------------------------------
+% -------------------------------------------
 
-%-----------REFERENCES-----------------
-% \vfill % Pushes the content to the bottom of the page
-% \section*{References}
-% For more details on the projects and implementations described, please visit my GitHub repository:
-% \begin{center}
-% \href{https://github.com/RahulSinghParmar/resume}{https://github.com/RahulSinghParmar/resume}
-% \end{center}
+% -----------REFERENCES-----------------
+ \vfill % Pushes the content to the bottom of the page
+ \section*{References}
+ For more details on the projects and implementations described, please visit my GitHub repository:
+ \begin{center}
+ \href{https://github.com/RahulSinghParmar/resume}{https://github.com/RahulSinghParmar/resume}
+ \end{center}
 
 \end{document}
 
